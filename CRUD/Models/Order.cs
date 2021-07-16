@@ -9,9 +9,8 @@ namespace CRUD.Models
         public DateTime OrderDate { get; set; }
         private int _orderNumber;
         public int OrderNumber { get { return _orderNumber; } set { _orderNumber = ID; } }
-        public decimal TotalValue { get { return CalcTotalValue(); } }
+        public decimal TotalValue { get; set; }
         public decimal FreightValue { get; set; }
-
         public Client Client { get; set; }
         public IList<OrderItens> OrderItens { get; set; } = new List<OrderItens>();
 

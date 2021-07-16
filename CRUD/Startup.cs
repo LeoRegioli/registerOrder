@@ -35,6 +35,7 @@ namespace CRUD
             services.AddDbContext<CrudContext>(opt => opt.UseSqlite("Data Source=Crud.db"));
             services.AddScoped<ICrudRepository<Client>, ClientRepository>();
             services.AddScoped<ICrudRepository<Product>, ProductRepository>();
+            services.AddScoped<ICrudRepository<Order>, OrderRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

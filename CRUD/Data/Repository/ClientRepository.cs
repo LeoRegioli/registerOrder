@@ -23,7 +23,7 @@ namespace CRUD.Data.Repository
         public async Task<bool> Save(Client client)
         {
             await _context.AddAsync<Client>(client);
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             return (count == 0) ? false : true;
         }
 

@@ -9,6 +9,6 @@ namespace CRUD.Models
         public string Category { get; set; }
         public decimal UnitaryValue { get; set; }
 
-        public IList<OrderItens> OrderItens { get; set; } = new List<OrderItens>();
+        // public IList<OrderItens> OrderItens { get; set; } = new List<OrderItens>();
     }
 }
